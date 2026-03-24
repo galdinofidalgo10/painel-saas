@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Painel</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container">
+
+<h1 class="mt-4">Dashboard</h1>
+
+<div class="row mt-4">
+  <div class="col">
+    <div class="card p-3">
+      <h3>Usuários</h3>
+      <p>{{ usuarios }}</p>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card p-3">
+      <h3>Faturamento</h3>
+      <p>R$ {{ faturamento }}</p>
+    </div>
+  </div>
+</div>
+
+<a href="/usuarios" class="btn btn-primary mt-4">Usuários</a>
+<a href="/pagamentos" class="btn btn-success mt-4">Pagamentos</a>
+<a href="/logout" class="btn btn-danger mt-4">Sair</a>
+
+</body>
+</html>

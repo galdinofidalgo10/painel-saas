@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Usuários</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container">
+
+<h1 class="mt-4">Usuários</h1>
+
+<form method="POST" action="/add_user" class="mb-3">
+  <input name="telegram_id" placeholder="Telegram ID" class="form-control mb-2">
+  <button class="btn btn-primary">Adicionar</button>
+</form>
+
+<table class="table">
+<tr>
+<th>ID</th>
+<th>Telegram</th>
+<th>Créditos</th>
+<th>Ação</th>
+</tr>
+
+{% for u in dados %}
+<tr>
+<td>{{u[0]}}</td>
+<td>{{u[1]}}</td>
+<td>{{u[2]}}</td>
+<td>
+<form method="POST" action="/add_credito">
+<input type="hidden" name="id" value="{{u[0]}}">
+<input name="creditos" placeholder="+ créditos" class="form-control">
+<button class="btn btn-success mt-1">Adicionar</button>
+</form>
+</td>
+</tr>
+{% endfor %}
+
+</table>
+
+<a href="/" class="btn btn-secondary">Voltar</a>
+
+</body>
+</html>
