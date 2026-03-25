@@ -1,87 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Painel</title>
+<title>Comprar Tele Sena</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
 body {
-    background: #0f172a;
+    background: #0f2027;
     color: white;
 }
 
-.sidebar {
-    width: 220px;
-    height: 100vh;
-    background: #020617;
-    position: fixed;
-    padding: 20px;
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1c92d2, #f2fcfe);
+    color: #000;
 }
 
-.sidebar a {
-    display: block;
-    color: #94a3b8;
-    text-decoration: none;
-    margin-bottom: 15px;
-}
-
-.sidebar a:hover {
+.btn-whatsapp {
+    background: #25D366;
     color: white;
+    font-size: 18px;
+    padding: 15px;
 }
 
-.content {
-    margin-left: 240px;
-    padding: 20px;
-}
-
-.card {
-    border-radius: 12px;
+.section {
+    padding: 40px 20px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="sidebar">
-    <h4>Painel SaaS</h4>
-    <a href="/">Dashboard</a>
-    <a href="/usuarios">Usuários</a>
-    <a href="/pagamentos">Pagamentos</a>
-    <a href="/logout">Sair</a>
+<!-- TOPO -->
+<div class="hero">
+    <h1>💰 Ganhe Prêmios com a Tele Sena</h1>
+    <p>Compre comigo com atendimento rápido e seguro</p>
+
+    <a href="https://wa.me/5598987412574?text=Quero%20comprar%20a%20Tele%20Sena" 
+    class="btn btn-whatsapp mt-3">
+        📲 Comprar Agora no WhatsApp
+    </a>
 </div>
 
-<div class="content">
-
-    <h2>Dashboard</h2>
+<!-- BENEFÍCIOS -->
+<div class="section container text-center">
+    <h2>Por que comprar comigo?</h2>
 
     <div class="row mt-4">
-
         <div class="col-md-4">
-            <div class="card bg-dark p-3">
-                <h5>Usuários</h5>
-                <h2>120</h2>
-            </div>
+            <h4>⚡ Atendimento Rápido</h4>
+            <p>Resposta imediata</p>
         </div>
 
         <div class="col-md-4">
-            <div class="card bg-dark p-3">
-                <h5>Consultas</h5>
-                <h2>450</h2>
-            </div>
+            <h4>🔒 Compra Segura</h4>
+            <p>Revendedor cadastrado</p>
         </div>
 
         <div class="col-md-4">
-            <div class="card bg-dark p-3">
-                <h5>Receita</h5>
-                <h2>R$ 1.200</h2>
-            </div>
+            <h4>🎁 Prêmios Reais</h4>
+            <p>Participe dos sorteios oficiais</p>
         </div>
-
     </div>
+</div>
 
+<!-- CTA FINAL -->
+<div class="section text-center">
+    <h2>Garanta a sua agora</h2>
+
+    <a href="https://wa.me/5598987412574?text=Quero%20comprar%20a%20Tele%20Sena%20agora" 
+    class="btn btn-success mt-3">
+        🔥 COMPRAR AGORA
+    </a>
 </div>
 
 </body>
